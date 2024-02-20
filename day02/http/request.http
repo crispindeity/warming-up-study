@@ -1,0 +1,14 @@
+###
+GET http://localhost:8080/api/v1/calc?num1=10&num2=5
+
+###
+GET http://localhost:8080/api/v1/day-of-week?date=2023-01-01
+
+
+###
+POST http://localhost:8080/api/v1/calc
+Content-Type: application/json
+
+{
+    "numbers": [1, 2, 3, 4, 5]
+}
