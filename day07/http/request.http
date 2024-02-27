@@ -5,7 +5,7 @@ Content-Type: application/json
 {
     "name": "apple",
     "warehousingDate": "2024-01-01",
-    "price": 70
+    "price": 1003
 }
 
 ###
@@ -13,8 +13,16 @@ PUT http://localhost:8080/api/v1/fruit
 Content-Type: application/json
 
 {
-    "id": 2
+    "id": 1
 }
 
 ###
 GET http://localhost:8080/api/v1/fruit/stat?name=apple
+
+
+###
+GET http://localhost:8080/api/v1/fruit/count?name=apple
+
+
+###
+GET http://localhost:8080/api/v1/fruit/list?option=LTE&price=9000

@@ -1,6 +1,5 @@
 package study.day07.fruit.repository;
 
-import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Repository;
 import study.day07.fruit.domain.Fruit;
 import study.day07.fruit.domain.Status;
@@ -10,7 +9,6 @@ import java.util.Optional;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicLong;
 
-@Primary
 @Repository
 public class FruitMemoryRepository implements FruitRepository {
 

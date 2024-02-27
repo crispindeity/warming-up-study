@@ -7,3 +7,10 @@ spring:
     h2:
         console:
             enabled: true
+    jpa:
+        show-sql: true
+        hibernate:
+            ddl-auto: create-drop
+    sql:
+        init:
+            mode: never
